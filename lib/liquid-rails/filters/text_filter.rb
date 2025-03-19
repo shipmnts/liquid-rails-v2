@@ -43,4 +43,4 @@ module Liquid
   end
 end
 
-Liquid::Template.register_filter(Liquid::Rails::TextFilter)
+Liquid::Environment.default.register_filter(Liquid::Rails::TextFilter)

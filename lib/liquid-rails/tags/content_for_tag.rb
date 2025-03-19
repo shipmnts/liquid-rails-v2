@@ -73,5 +73,5 @@ module Liquid
   end
 end
 
-Liquid::Template.register_tag('content_for', Liquid::Rails::ContentForTag)
-Liquid::Template.register_tag('yield', Liquid::Rails::YieldTag)
+Liquid::Environment.default.register_tag('content_for', Liquid::Rails::ContentForTag)
+Liquid::Environment.default.register_tag('yield', Liquid::Rails::YieldTag)

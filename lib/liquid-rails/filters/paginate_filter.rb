@@ -56,4 +56,4 @@ module Liquid
   end
 end
 
-Liquid::Template.register_filter(Liquid::Rails::PaginateFilter)
+Liquid::Environment.default.register_filter(Liquid::Rails::PaginateFilter)

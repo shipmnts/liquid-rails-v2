@@ -21,4 +21,4 @@ module Liquid
   end
 end
 
-Liquid::Template.register_filter(Liquid::Rails::UrlFilter)
+Liquid::Environment.default.register_filter(Liquid::Rails::UrlFilter)

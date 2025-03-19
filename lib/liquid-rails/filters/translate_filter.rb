@@ -11,4 +11,4 @@ module Liquid
   end
 end
 
-Liquid::Template.register_filter Liquid::Rails::TranslateFilter
+Liquid::Environment.default.register_filter Liquid::Rails::TranslateFilter

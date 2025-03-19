@@ -37,4 +37,4 @@ module Liquid
   end
 end
 
-Liquid::Template.register_tag('google_analytics_tag', Liquid::Rails::GoogleAnalyticsTag)
+Liquid::Environment.default.register_tag('google_analytics_tag', Liquid::Rails::GoogleAnalyticsTag)
